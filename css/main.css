@@ -71,3 +71,19 @@
   color: red;
   text-transform: uppercase;
 }
+.email {
+  width: 50px;
+}
+.contact-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.email-text {
+  margin-top: 20px;
+  color: #2C6CA8;
+  font-size: 15px;
+}
+.email-text:hover {
+  color: red;
+}
