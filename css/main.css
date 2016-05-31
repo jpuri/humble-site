@@ -14,7 +14,7 @@
   font-variant: small-caps;
 }
 .header-line {
-  color: #2C6CA8;
+  color: black;
   font-size: 17px;
   font-style: italic;
 }
@@ -24,7 +24,7 @@
   height: 50px;
 }
 .content-section {
-  margin: 75px 0;
+  margin: 175px 0;
   display: flex;
   flex-direction: column;
 }
@@ -34,11 +34,12 @@
   text-align: center;
   color: #2C6CA8;
 }
-.section-content {
+.section-text {
   font-size: 18px;
   text-align: center;
   color: #2C6CA8;
   margin: 25px 20% 0;
+  color: black;
 }
 .section-bar {
   background-image: url('../img/header.jpg');
@@ -62,19 +63,24 @@
   margin-top: 25px;
   text-align: center;
 }
-.tech-section-content {
+.tech-section-text {
   display: flex;
   justify-content: center;
 }
 .tech-label {
   margin-top: 25px;
-  color: red;
+  color: #ef4c4c;
   text-transform: uppercase;
+}
+.contact-section-content {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
 }
 .email {
   width: 50px;
 }
-.contact-section-content {
+.contact-section-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,5 +91,10 @@
   font-size: 15px;
 }
 .email-text:hover {
-  color: red;
+  color: #ef4c4c;
+}
+.photo {
+  height: 175px;
+  border-radius: 50%;
+  width: 160px;
 }
