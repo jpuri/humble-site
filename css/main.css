@@ -6,6 +6,21 @@
   height: 120px;
   padding: 0 10px;
 }
+.grow img {
+  height: 120px;
+  width: 120px;
+
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.grow img:hover {
+  width: 170px;
+  height: 170px;
+}
 #menu {
     width: 550px;
     height: 35px;
@@ -111,7 +126,7 @@
 .tech-area {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 150px;
   align-items: center;
   margin: 20px 50px 20px;
 }
@@ -122,9 +137,16 @@
   text-align: center;
   color: #a8a8a8;
 }
+.tech-desc {
+  font-size: 16px;
+  width: 175px;
+  margin-top: 15px;
+  text-align: center;
+  color: #a8a8a8;
+}
 .tech-section-text {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;;
 }
 .tech-label {
   margin-top: 15px;
