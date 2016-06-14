@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <script src="jquery-1.12.2.min.js"></script>
     <style>
 ul {
     list-style-type: none;
@@ -31,7 +32,9 @@ li a:hover:not(.active) {
     background-color: #94d1ed;
     color:#ffffff;
 }
+
 </style>
+
     <title>Humble</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -47,11 +50,23 @@ li a:hover:not(.active) {
             <li><a href="javascript: void(0)">Services</a></li>
             <li><a href="javascript: void(0)">Our Team</a></li>
             <li><a href="javascript: void(0)">Contact Us</a></li>
+            <script>
+            jQuery('a[href^="#"]').click(function(e) {
+
+    jQuery('html,body').animate({ scrollTop: jQuery(this.hash).offset().top}, 10);
+
+    return false;
+
+    e.preventDefault();
+
+});
+
+</script>
           </ul>
       </span>
     </div>
 
-    <div class="welcome-section">
+    <div class="welcomesection">
       <span class="section-heading">Welcome to Humble!</span>
       <span class="section-text">
         Humble is a company formed by a group of like minded software development professionals.
@@ -61,11 +76,10 @@ li a:hover:not(.active) {
         - in terms of good customer service for our customers and in terms of growth of us as a company and as individuals.
       </span>
    </div>
-
     <div class="content-section">
       <span class="section-heading">Our Services</span>
       <span class="tech-section-text">
-        <span class="border-area">
+      <span class="border-area">
           <img src="img/box1.jpg" alt="" class="boximages"/>
         <span class="tech-area">
           <span class="tech-label">Web Applications</span>
@@ -75,7 +89,7 @@ li a:hover:not(.active) {
             Flux-Redux, DraftJS and Backend using NodeJS, Postgres or MongoDB.
           </span>
         </span>
-      </span>
+    </span>
       <span class="border-area">
         <img src="img/box2.jpg" alt="" class="boximages"/>
         <span class="tech-area">

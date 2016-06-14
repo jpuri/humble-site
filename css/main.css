@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
-  margin: 20px 50px;
+  margin: 20px 5%;
   height: 120px;
   padding: 0 10px;
 }
 .logo {
+  flex-shrink: 1;
   height: 100%;
   width: auto;
 }
@@ -15,7 +16,7 @@
 }
 .header-right {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100px;
@@ -30,7 +31,7 @@
   font-size: 17px;
   font-style: italic;
 }
-.welcome-section {
+.welcomesection {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
@@ -38,7 +39,7 @@
   background-color: #EAEBEC;
 }
 .content-section {
-  margin: 20px 50px;
+  margin: 20px 5%;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -60,40 +61,42 @@
 }
 .webapp {
   width: 100px;
+  margin-top: -70px;
 }
 .border-area {
   display: flex;
   flex-direction: column;
   /*border: 1px solid #EAEBEC ;*/
-  width: 250px;
+  width: 30%;
   align-items: center;
-  margin: 20px 50px 50px;
   position: relative;
+  max-width: 270px;
 }
 .boximages{
   position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
 }
 .tech-area {
+  flex-shrink: 1;
   display: flex;
   flex-direction: column;
-  width: 150px;
-  position: absolute;
   align-items: center;
-  margin: 20px 50px 20px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
 }
 .team-area {
   display: flex;
   flex-direction: column;
-  width: 150px;
   align-items: center;
-  margin: 20px 50px 20px;
 }
 .tech-description {
   font-size: 16px;
   width: 225px;
-  margin-top: 80px;
   text-align: center;
   color: #ffffff;
 }
@@ -105,8 +108,9 @@
   color: #a8a8a8;
 }
 .tech-section-text {
+  flex-shrink: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 460px;
 }
 .team-section-text {
