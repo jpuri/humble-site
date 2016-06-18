@@ -8,16 +8,16 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logo.jpg" sizes="16*16" />
   </head>
-  <body class="header-background">
+  <body class="header-background"  id="Home">
     <div class="header-section">
       <img class="logo" src="img/logo.jpg"/>
       <span class="header-right">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#Home">Home</a></li>
           <li><a href="#about_us">About Us</a></li>
-          <li><a href="javascript: void(0)">Services</a></li>
-          <li><a href="javascript: void(0)">Our Team</a></li>
-          <li><a href="javascript: void(0)">Contact Us</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Team">Our Team</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
         </ul>
       </span>
     </div>
@@ -32,7 +32,7 @@
         - in terms of good customer service for our customers and in terms of growth of us as a company and as individuals.
       </span>
    </div>
-    <div class="content-section">
+    <div class="content-section" id="Services">
       <span class="section-heading">Our Services</span>
       <span class="tech-section-text">
       <span class="border-area">
@@ -69,9 +69,20 @@
         </span>
         </span>
       </span>
+    </div>
 
-      <span class="section-heading">Our Team</span>
+    <div class="team-section">
+      <span class="section-heading"  id="Team">Our Team</span>
       <span class="team-section-text">
+        <span class="team-area">
+          <span class="tilt pic">
+          <img src="img/jyoti.png" class="photo"/>
+        </span>
+          <span class="tech-label">Jyoti Puri</span>
+          <span class="tech-desc">
+             Loren ipsum dolor sit amet, ea nonumy consequuntur pri, te etiam fabulas repudiande sea.
+          </span>
+        </span>
         <span class="team-area">
           <span class="tilt pic">
           <img src="img/jyoti.png" class="photo"/>
@@ -111,7 +122,7 @@
         </span>
       </span>
     </div>
-    <div class="contact-section-content">
+    <div class="contact-section-content"  id="Contact">
       <span class="contact-section-text">
         <a href="mailto:contact@humble.net.in" target="_top">
           <img src="img/email.svg" class="email"/>
