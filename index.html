@@ -2,83 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <script src="jquery-1.12.2.min.js"></script>
-    <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    border-radius: 8px;
-    color: #a8a8a8;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover:not(.active) {
-    background-color: #94d1ed;
-    color: #ffffff;
-}
-li .active {
-    background-color: red;
-    color:#ffffff;
-}
-
-</style>
-
     <title>Humble</title>
+    <script src="lib/jquery-3.0.0.min.js"></script>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/Ssdn logo.jpg" sizes="16*16" />
+    <link rel="icon" type="image/png" href="img/logo.jpg" sizes="16*16" />
   </head>
   <body class="header-background">
     <div class="header-section">
-      <img class="logo" src="img/Ssdn logo.jpg"/>
+      <img class="logo" src="img/logo.jpg"/>
       <span class="header-right">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="javascript: void(0)">About Us</a></li>
-            <li><a href="javascript: void(0)">Services</a></li>
-            <li><a href="javascript: void(0)">Our Team</a></li>
-            <li><a href="javascript: void(0)">Contact Us</a></li>
-            <script>
-            jQuery('a[href^="#"]').click(function(e) {
-
-    jQuery('html,body').animate({ scrollTop: jQuery(this.hash).offset().top}, 10);
-
-    return false;
-
-    e.preventDefault();
-
-});
-
-</script>
-
-
-<script>
-$(function() {
-     var pgurl = window.location.href.substr(window.location.href
-.lastIndexOf("/")+1);
-     $("li a").each(function(){
-          if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
-          $(this).addClass("active");
-     })
-});
-</script>
-          </ul>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about_us">About Us</a></li>
+          <li><a href="javascript: void(0)">Services</a></li>
+          <li><a href="javascript: void(0)">Our Team</a></li>
+          <li><a href="javascript: void(0)">Contact Us</a></li>
+        </ul>
       </span>
     </div>
 
-    <div class="welcomesection">
+    <div class="welcomesection" id="about_us">
       <span class="section-heading">Welcome to Humble!</span>
       <span class="section-text">
         Humble is a company formed by a group of like minded software development professionals.
@@ -180,3 +124,11 @@ $(function() {
     <div class="bar"></div>
   </body>
 </html>
+<script>
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+</script>
