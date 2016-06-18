@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <script src="jquery-1.12.2.min.js"></script>
     <style>
 ul {
     list-style-type: none;
@@ -23,17 +24,17 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 li a:hover:not(.active) {
     background-color: #94d1ed;
     color: #ffffff;
 }
-
-.active {
-    background-color: #94d1ed;
+li .active {
+    background-color: red;
     color:#ffffff;
 }
+
 </style>
+
     <title>Humble</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -43,22 +44,41 @@ li a:hover:not(.active) {
     <div class="header-section">
       <img class="logo" src="img/Ssdn logo.jpg"/>
       <span class="header-right">
-        <div id="menu">
-
           <ul>
-            <li><a <a class="active" href="#home">Home</a></li>
-            <li><a href="#news">About Us</a></li>
-            <li><a href="#contact">Services</a></li>
-            <li><a href="#about">Our Team</a></li>
-            <li><a href="#home">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javascript: void(0)">About Us</a></li>
+            <li><a href="javascript: void(0)">Services</a></li>
+            <li><a href="javascript: void(0)">Our Team</a></li>
+            <li><a href="javascript: void(0)">Contact Us</a></li>
+            <script>
+            jQuery('a[href^="#"]').click(function(e) {
+
+    jQuery('html,body').animate({ scrollTop: jQuery(this.hash).offset().top}, 10);
+
+    return false;
+
+    e.preventDefault();
+
+});
+
+</script>
+
+
+<script>
+$(function() {
+     var pgurl = window.location.href.substr(window.location.href
+.lastIndexOf("/")+1);
+     $("li a").each(function(){
+          if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+          $(this).addClass("active");
+     })
+});
+</script>
           </ul>
-</div>
-      <!--  <span class="header-name">Humble</span>
-        <span class="header-line">Software Development, as it should be.</span>-->
       </span>
     </div>
-    <!--<div class="bar"></div>-->
-    <div class="welcome-section">
+
+    <div class="welcomesection">
       <span class="section-heading">Welcome to Humble!</span>
       <span class="section-text">
         Humble is a company formed by a group of like minded software development professionals.
@@ -68,27 +88,25 @@ li a:hover:not(.active) {
         - in terms of good customer service for our customers and in terms of growth of us as a company and as individuals.
       </span>
    </div>
-    <!--<div class="bar"></div>-->
     <div class="content-section">
       <span class="section-heading">Our Services</span>
-
       <span class="tech-section-text">
-        <span class="border-area">
+      <span class="border-area">
+          <img src="img/box1.jpg" alt="" class="boximages"/>
         <span class="tech-area">
           <span class="tech-label">Web Applications</span>
           <img src="img/webapp.svg" class="webapp"/>
-
           <span class="tech-description">
             Building high quality responsive web applications. Our preferred tech stack is Frontend using ReactJS,
             Flux-Redux, DraftJS and Backend using NodeJS, Postgres or MongoDB.
           </span>
         </span>
-      </span>
+    </span>
       <span class="border-area">
+        <img src="img/box2.jpg" alt="" class="boximages"/>
         <span class="tech-area">
           <span class="tech-label">Mobile Applications</span>
           <img src="img/mobile.svg" class="webapp"/>
-
           <span class="tech-description">
             Our preferred technology for building mobile applications is React Native.
             We also do Native mobile application development and mobile Web application development.
@@ -96,10 +114,10 @@ li a:hover:not(.active) {
         </span>
         </span>
         <span class="border-area">
+          <img src="img/box3.jpg" alt="" class="boximages"/>
         <span class="tech-area">
           <span class="tech-label">Trainings</span>
           <img src="img/training.svg" class="webapp"/>
-
           <span class="tech-description">
             We also provide trainings in area like JavaScript, FrontEnd development using frameworks like ReactJS or AngularJS, HTML5, CSS3,
             Mobile Development and Software Craftmanship.
@@ -107,37 +125,49 @@ li a:hover:not(.active) {
         </span>
         </span>
       </span>
-    <!--</div>
-    <div class="bar"></div>
-    <div class="content-section">-->
+
       <span class="section-heading">Our Team</span>
-      <span class="tech-section-text">
-        <span class="tech-area">
+      <span class="team-section-text">
+        <span class="team-area">
+          <span class="tilt pic">
           <img src="img/jyoti.png" class="photo"/>
+        </span>
           <span class="tech-label">Jyoti Puri</span>
-          <span class="tech-description">
-            Awesome programmer.
+          <span class="tech-desc">
+             Loren ipsum dolor sit amet, ea nonumy consequuntur pri, te etiam fabulas repudiande sea.
           </span>
         </span>
-        <span class="tech-area">
-          <img src="img/abhinav.jpg" class="photo"/>
-          <span class="tech-label">Kumar Abhinav</span>
-          <span class="tech-description">
-            Awesome programmer.
-          </span>
-        </span>
-        <span class="tech-area">
-          <img src="img/abhinav.jpg" class="photo"/>
+        <span class="team-area">
+          <img src="img/2.jpg" class="photo"/>
           <span class="tech-label">Ravi Pandey</span>
-          <span class="tech-description">
-            Awesome programmer.
+          <span class="tech-desc">
+            Loren ipsum dolor sit amet, ea nonumy consequuntur pri, te etiam fabulas repudiande sea.
+          </span>
+        </span>
+        <span class="team-area">
+          <img src="img/3.jpg" class="photo"/>
+          <span class="tech-label">Sunita Pandey</span>
+          <span class="tech-desc">
+            Loren ipsum dolor sit amet, ea nonumy consequuntur pri, te etiam fabulas repudiande sea.
+          </span>
+        </span>
+        <span class="team-area">
+          <img src="img/4.jpg" class="photo"/>
+          <span class="tech-label">Kumar Abhinav</span>
+          <span class="tech-desc">
+            Loren ipsum dolor sit amet, ea nonumy consequuntur pri, te etiam fabulas repudiande sea.
+          </span>
+        </span>
+        <span class="team-area">
+          <img src="img/5.jpg" class="photo"/>
+          <span class="tech-label">Sunil Khurana</span>
+          <span class="tech-desc">
+            Loren ipsum dolor sit amet, ea nonumy consequuntur pri, te etiam fabulas repudiande sea.
           </span>
         </span>
       </span>
     </div>
-    <div class="bar"></div>
     <div class="contact-section-content">
-    <!--  <span class="section-heading">Contact Us</span>-->
       <span class="contact-section-text">
         <a href="mailto:contact@humble.net.in" target="_top">
           <img src="img/email.svg" class="email"/>
