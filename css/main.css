@@ -3,7 +3,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ffffff;
 }
 li {
     float: left;
@@ -11,18 +10,21 @@ li {
 li a {
     display: block;
     border-radius: 8px;
-    color: #a8a8a8;
     text-align: center;
-    padding: 14px 16px;
+    padding: 11px 16px;
     text-decoration: none;
+    color: rgb(94, 94, 94);
 }
 li a:hover {
     background-color: #94d1ed;
     color: #ffffff;
 }
 li a:active {
-    background-color: #4c4ca6;
+    background-color: rgb(30, 91, 114);
     color:#ffffff;
+}
+li a:visited {
+  color: rgb(94, 94, 94);
 }
 .header-section {
   display: flex;
@@ -31,6 +33,7 @@ li a:active {
   margin: 20px 5%;
   height: 120px;
   padding: 0 10px;
+  border-radius: 5px;
 }
 .logo {
   flex-shrink: 1;
@@ -39,6 +42,7 @@ li a:active {
 }
 .header-background {
   background-color: #EAEBEC;
+  color: rgb(94, 94, 94);
 }
 .header-right {
   display: flex;
@@ -51,11 +55,9 @@ li a:active {
 }
 .header-name {
   font-size: 50px;
-  color: #a8a8a8;
   font-variant: small-caps;
 }
 .header-line {
-  color:  #a8a8a8;
   font-size: 17px;
   font-style: italic;
 }
@@ -72,6 +74,7 @@ li a:active {
   flex-direction: column;
   background-color: #ffffff;
   position: relative;
+  border-radius: 5px;
 }
 .team-section {
   margin: 50px 5%;
@@ -79,25 +82,24 @@ li a:active {
   flex-direction: column;
   background-color: #ffffff;
   position: relative;
+  border-radius: 5px;
 }
 .section-heading {
   margin: 20px 0;
   font-size: 30px;
   text-align: center;
-  color: #a8a8a8;
-  font-family: serif;;
   font-weight: lighter;
 }
 .section-text {
-  font-size: 20.45px;
+  font-size: 18px;
   text-align: center;
   margin: 20px 8% 20px;
-  color:  #a8a8a8;
+  font-weight: lighter;
 }
 .webapp {
-  width: 42%;
-  height: 25%;
-  margin-top: -27%;
+  width: 60%;
+  height: auto;
+  margin-top: -35%;
 }
 .border-area {
   display: flex;
@@ -135,18 +137,19 @@ li a:active {
   margin-bottom: 40px;
 }
 .tech-description {
-  font-size: 16px;
+  font-size: 15px;
   width: 90%;
   text-align: center;
   color: #ffffff;
   flex-wrap: wrap;
+  font-weight: lighter;
+  line-height: 1.5;
 }
 .tech-desc {
   font-size: 16px;
   width: 175px;
   margin-top: 15px;
   text-align: center;
-  color: #a8a8a8;
 }
 .tech-section-text {
   flex-shrink: 1;
@@ -165,13 +168,14 @@ li a:active {
 .tech-label {
   margin-top: 5%;
   margin-bottom: 6%;
-  color: #a8a8a8;
+  font-size: 18px;
 }
 .contact-section-content {
   margin: 50px 5%;
   display: flex;
   flex-direction: column;
   background-color: #94d1ed;
+  border-radius: 5px;
 }
 .email {
   width: 50px;
@@ -195,4 +199,28 @@ li a:active {
   height: 120px;
   border-radius: 50%;
   width: 120px;
+}
+.farista-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.farista-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.farista-title {
+  font-size: 18px;
+}
+.farista-about {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.farista {
+  width: auto;
+  height: 250px;
+  border-radius: 50%;
 }
