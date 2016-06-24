@@ -6,11 +6,11 @@
     <script src="lib/jquery-3.0.0.min.js"></script>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/logo.jpg" sizes="16*16" />
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="16*16" />
   </head>
   <body class="header-background"  id="Home">
     <div class="header-section">
-      <img class="logo" src="img/logo.jpg"/>
+      <img class="logo" src="img/logo.png"/>
       <span class="header-right">
         <ul>
           <li><a href="#Home">Home</a></li>
@@ -36,8 +36,10 @@
       <span class="border-area">
           <img src="img/box1.jpg" alt="" class="boximages"/>
         <span class="tech-area">
-          <span class="tech-label">Web Development</span>
-          <img src="img/icon-webapp.png" class="webapp"/>
+          <span class="tech-area-title">
+            <span class="tech-label">Web Development</span>
+            <img src="img/icon-webapp.png" class="tech-area-icon"/>
+          </span>
           <span class="tech-description">
             Building high quality responsive web applications. Our preferred tech stack is Frontend using ReactJS,
             Flux-Redux, DraftJS and Backend using NodeJS, Postgres or MongoDB.
@@ -47,8 +49,10 @@
       <span class="border-area">
         <img src="img/box2.jpg" alt="" class="boximages"/>
         <span class="tech-area">
-          <span class="tech-label">Mobile Development</span>
-          <img src="img/icon-mobapp.png" class="webapp"/>
+          <span class="tech-area-title">
+            <span class="tech-label">Mobile Development</span>
+            <img src="img/icon-mobapp.png" class="tech-area-icon"/>
+          </span>
           <span class="tech-description">
             Our preferred technology for building mobile applications is React Native.
             We also do Native mobile application development and mobile Web application development.
@@ -58,8 +62,10 @@
         <span class="border-area">
           <img src="img/box3.jpg" alt="" class="boximages"/>
         <span class="tech-area">
-          <span class="tech-label">Trainings</span>
-          <img src="img/icon-training.png" class="webapp"/>
+          <span class="tech-area-title">
+            <span class="tech-label">Trainings</span>
+            <img src="img/icon-training.png" class="tech-area-icon"/>
+          </span>
           <span class="tech-description">
             We also provide trainings in area like JavaScript, FrontEnd development using frameworks like ReactJS or AngularJS, HTML5, CSS3,
             Mobile Development and Software Craftmanship.
@@ -143,7 +149,7 @@
 <script>
 $('a').click(function(){
     $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
+        scrollTop: $( $(this).attr('href') ).offset().top - 20
     }, 500);
     return false;
 });
