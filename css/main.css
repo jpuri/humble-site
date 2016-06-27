@@ -152,10 +152,11 @@ li a:visited {
   line-height: 1.5;
 }
 .tech-desc {
-  font-size: 16px;
+  font-size: 15px;
   width: 175px;
   margin-top: 15px;
   text-align: center;
+  line-height: 1.3;
 }
 .tech-section-text {
   flex-shrink: 1;
@@ -200,9 +201,10 @@ li a:visited {
   color: #ef4c4c;
 }
 .photo {
-  height: 120px;
+  height: 150px;
   border-radius: 50%;
-  width: 120px;
+  width: auto;
+  max-width: 150px;
 }
 .farista-section {
   width: 100%;
@@ -215,16 +217,25 @@ li a:visited {
   justify-content: center;
   align-items: center;
 }
-.farista-title {
+.farista-name {
   font-size: 18px;
+  margin-top: 20px;
 }
 .farista-about {
   height: 50px;
   display: flex;
   justify-content: center;
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 15px;
 }
 .farista {
   width: auto;
   height: 250px;
   border-radius: 50%;
+}
+.team-name {
+  margin-top: 20px;
 }
