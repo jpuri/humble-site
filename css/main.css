@@ -232,9 +232,9 @@ li a:visited {
   font-size: 15px;
 }
 .farista {
-  width: auto;
-  height: 250px;
+  height: 325px;
   border-radius: 50%;
+  width: auto;
 }
 .team-name {
   margin-top: 20px;
