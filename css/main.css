@@ -1,89 +1,87 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-li {
-    float: left;
-}
-li a {
-  display: block;
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: rgb(103, 103, 103);
-}
-li a:hover {
-    background-color: #94d1ed;
-    color: #ffffff;
-}
-li a:active {
-    background-color: rgb(30, 91, 114);
-    color:#ffffff;
-}
-li a:visited {
-  color: rgb(94, 94, 94);
-}
 .header-section {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  background-color: #ffffff;
-  margin: 20px 8%;
-  height: 120px;
-  padding: 0 10px;
-  border-radius: 5px;
-  align-items: center;
+  padding: 0 7%;
+  background-color: rgb(77, 138, 200);
+  height: 755px;
 }
 .logo {
-  flex-shrink: 1;
-  height: 100%;
+  height: 180px;
   width: auto;
+  background: white;
 }
-.header-background {
-  background-color: #EAEBEC;
-  color: rgb(94, 94, 94);
-}
-.header-right {
+.header-top {
   display: flex;
-  flex-direction: row;
-  flex-shrink: 1;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 120px;
 }
-.header-name {
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 45%;
+  min-width: 485px;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.menu li a {
+  padding: 6px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  border: 1px solid transparent;
+}
+.menu li a:hover {
+  border: 1px solid white;
+}
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.tech {
+  height: auto;
+  width: 50%;
+}
+.header-bottom-text {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.punchline {
+  color: white;
   font-size: 50px;
-  font-variant: small-caps;
+  font-family: sans-serif;
+  font-weight: 300;
+  text-shadow: 3px 3px 4px #206ab5;
 }
-.header-line {
-  font-size: 17px;
+.mantra {
+  margin-top: 25px;
+}
+.mantra {
+  margin-top: 25px;
+  color: white;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: 300;
   font-style: italic;
+  color: rgb(216,231,244);
 }
-.welcomesection {
+.welcome-section {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
   flex-direction: column;
-  background-color: #EAEBEC;
+  color: rgb(104, 105, 106);
 }
-.content-section {
-  margin: 20px 8%;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  position: relative;
-  border-radius: 5px;
-}
-.team-section {
-  margin: 50px 8%;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  position: relative;
-  border-radius: 5px;
+.section-text {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 50px;
+  font-weight: lighter;
+  width: 65%;
 }
 .section-heading {
   margin: 50px 0;
@@ -91,32 +89,50 @@ li a:visited {
   text-align: center;
   font-weight: lighter;
 }
-.section-text {
+.separator {
+  border: 2px solid rgb(57,127,198);
+  height: 0;
+  width: 10%;
+  margin: 0 auto;
+}
+.service-section {
+  margin: 20px 7%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(104, 105, 106);
+}
+.tech-section {
+  display: flex;
+  justify-content: space-around;
+  height: 460px;
+  margin: 0 4% 60px;
+}
+.tech-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  margin: 7% 0;
+}
+.tech-label {
   font-size: 18px;
-  text-align: center;
-  margin: 20px 22%;
+  color: rgb(144,145,146);
   font-weight: lighter;
 }
-.tech-area-title {
+.tech-title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 50%;
 }
-.tech-area-icon {
-  width: 70%;
+.tech-icon {
+  width: auto;
   height: auto;
-  margin-top: 12%;
+  margin-top: 7%;
 }
-.border-area {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  align-items: center;
-  position: relative;
-  max-width: 270px;
-  min-width: 200px;
-}
-.boximages{
+.tech-images{
   position: absolute;
   left: 0;
   top: 0;
@@ -124,23 +140,13 @@ li a:visited {
   height: 100%;
 }
 .tech-area {
-  flex-shrink: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-  margin: 10% 0;
-}
-.team-area {
-  flex-shrink: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 30%;
-  margin-bottom: 40px;
+  align-items: center;
+  position: relative;
+  max-width: 270px;
+  min-width: 200px;
 }
 .tech-description {
   font-size: 15px;
@@ -150,7 +156,47 @@ li a:visited {
   flex-wrap: wrap;
   font-weight: lighter;
   line-height: 1.5;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: 20%;
 }
+.footer-section {
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(77, 138, 200);
+}
+.team-section {
+  display: flex;
+  flex-direction: column;
+  color: rgb(80, 81, 82);
+  background-color: rgb(241, 242, 244);
+}
+
+.team-area {
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 40px;
+}
+.photo {
+  height: 150px;
+  border-radius: 50%;
+  width: 150px;
+  border: 3px solid white;
+  box-shadow: 0px 1px 2px rgb(162, 162, 162);
+}
+
+
+
 .tech-desc {
   font-size: 15px;
   width: 175px;
@@ -158,53 +204,11 @@ li a:visited {
   text-align: center;
   line-height: 1.3;
 }
-.tech-section-text {
-  flex-shrink: 1;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-around;
-  height: 460px;
-  margin: 0 4% 60px;
-}
 .team-section-text {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-}
-.tech-label {
-  font-size: 18px;
-}
-.contact-section-content {
-  margin: 50px 8%;
-  display: flex;
-  flex-direction: column;
-  background-color: #94d1ed;
-  border-radius: 5px;
-}
-.email {
-  width: 50px;
-}
-.contact-section-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-.email-text {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #ffffff;
-  font-size: 15px;
-}
-.email-text:hover {
-  color: #ef4c4c;
-}
-.photo {
-  height: 150px;
-  border-radius: 50%;
-  width: auto;
-  max-width: 150px;
 }
 .farista-section {
   width: 100%;

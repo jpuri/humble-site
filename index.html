@@ -8,76 +8,94 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logo.png" sizes="16*16" />
   </head>
-  <body class="header-background"  id="Home">
-    <div class="header-section">
-      <img class="logo" src="img/logo.png"/>
-      <span class="header-right">
-        <ul>
-          <li><a href="#Home">Home</a></li>
+  <body>
+    <div class="header-section" id="Home">
+      <div class="header-top">
+        <img class="logo" src="img/logo.png"/>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
           <li><a href="#aboutus">About Us</a></li>
-          <li><a href="#Services">Services</a></li>
-          <li><a href="#Team">Our Team</a></li>
-          <li><a href="#Contact">Contact Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
         </ul>
-      </span>
+      </div>
+      <div class="header-bottom">
+        <div class="header-bottom-text">
+          <span class="punchline">
+            Software Development
+          </span>
+          <span class="mantra">
+            ...as it should be
+          </span>
+        </div>
+        <img class="tech" src="img/tech.png"/>
+      </div>
     </div>
-
-    <div class="welcomesection" id="aboutus">
+    <div class="welcome-section" id="aboutus">
       <span class="section-heading">Welcome to Humble!</span>
       <span class="section-text">
-        Humble is a company formed by a group of motivated software developers.
-        With the far sighted vision of its founder Farista, Humble is on path growth always.
-        We work on our principles of humbleness, honesty and software development as it should be.
+        Humble is a company formed by a group of motivated software development professionals.
+        We deeply believe is doing business with Humbleness and Honesty.
+        We do software development in the way it should be done.
+        We give a lot of importance to understanding the need to our customers,
+        their use-case and accordingly building for them the right solution.
+        High quality standards for us are non-compromisable.
       </span>
+      <span class="separator" />
    </div>
-    <div class="content-section" id="Services">
-      <span class="section-heading">Our Services</span>
-      <span class="tech-section-text">
-      <span class="border-area">
-          <img src="img/box1.jpg" alt="" class="boximages"/>
+   <div class="service-section" id="services">
+     <span class="section-heading">Our Services</span>
+     <span class="section-text">
+        Out job starts from understanding the business need
+        of our customers, architecting a solution that fits their need and develop it for them.
+        We offer a wide variety of solutions but we mainly specialize in following areas:
+      </span>
+      <span class="tech-section">
         <span class="tech-area">
-          <span class="tech-area-title">
-            <span class="tech-label">Web Development</span>
-            <img src="img/icon-webapp.png" class="tech-area-icon"/>
-          </span>
-          <span class="tech-description">
-            Building high quality web applications. Our preferred technology stack: Frontend - ReactJS,
-            Flux-Redux, DraftJS and Backend - NodeJS, , Database: Postgres or MongoDB.
+          <img src="img/box1.jpg" alt="" class="tech-images"/>
+          <span class="tech-detail">
+            <span class="tech-title">
+              <span class="tech-label">Mobile Development</span>
+              <img src="img/icon-mobapp.png" class="tech-icon"/>
+            </span>
+            <span class="tech-description">
+              We offer both native and hybrid solutions for mobile applications.
+              Our preferred technology stack for mobile application development is React Native.
+            </span>
           </span>
         </span>
-    </span>
-      <span class="border-area">
-        <img src="img/box2.jpg" alt="" class="boximages"/>
         <span class="tech-area">
-          <span class="tech-area-title">
-            <span class="tech-label">Mobile Development</span>
-            <img src="img/icon-mobapp.png" class="tech-area-icon"/>
-          </span>
-          <span class="tech-description">
-            Our preferred technology for building mobile applications is React Native.
-            Though we also do Native mobile application development and mobile Web application development.
+          <img src="img/box2.jpg" alt="" class="tech-images"/>
+          <span class="tech-detail">
+            <span class="tech-title">
+              <span class="tech-label">Web Development</span>
+              <img src="img/icon-webapp.png" class="tech-icon"/>
+            </span>
+            <span class="tech-description">
+              Building high quality web applications. We expertize in: JavaScript, ReactJS,
+              Flux-Redux, AngularJS, NodeJS, MongoDB, HTML, CSS.
+            </span>
           </span>
         </span>
-        </span>
-        <span class="border-area">
-          <img src="img/box3.jpg" alt="" class="boximages"/>
         <span class="tech-area">
-          <span class="tech-area-title">
-            <span class="tech-label">Trainings</span>
-            <img src="img/icon-training.png" class="tech-area-icon"/>
+          <img src="img/box3.jpg" alt="" class="tech-images"/>
+          <span class="tech-detail">
+            <span class="tech-title">
+              <span class="tech-label">Trainings</span>
+              <img src="img/icon-training.png" class="tech-icon"/>
+            </span>
+            <span class="tech-description">
+              We provide trainings in these areas: JavaScript language, FrontEnd development frameworks
+              ReactJS, AngularJS, HTML5, CSS3, Mobile Development, Software Craftmanship.
+            </span>
           </span>
-          <span class="tech-description">
-            We provide trainings in for JavaScript language, FrontEnd development frameworks like
-            ReactJS or AngularJS, HTML5, CSS3,
-            Mobile Development and Software Craftmanship.
-          </span>
-        </span>
         </span>
       </span>
     </div>
 
     <div class="team-section">
-      <span class="section-heading"  id="Team">Our Team</span>
+      <span class="section-heading"  id="team">Our Team</span>
       <span class="farista-section">
         <span class="farista-details">
           <img src="img/babu.png" class="farista" />
@@ -128,18 +146,12 @@
           </span>
         </span>
       </span>
+      <span class="separator" />
     </div>
-    <div class="contact-section-content"  id="Contact">
-      <span class="contact-section-text">
-        <a href="mailto:contact@humble.net.in" target="_top">
-          <img src="img/icon-contact-us.png" class="email"/>
-        </a>
-        <a href="mailto:contact@humble.net.in" target="_top" class="email-text">
-          <span>contact@humble.net.in</span>
-        </a>
-      </span>
-    </div>
-    <div class="bar"></div>
+    <div id="contactus"></div>
+    <div class="footer-section" id="contactus">
+      C 2016 Humble
+   </div>
   </body>
 </html>
 <script>
