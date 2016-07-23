@@ -93,9 +93,8 @@
         </span>
       </span>
     </div>
-
-    <div class="team-section">
-      <span class="section-heading"  id="team">Our Team</span>
+    <div class="team-section" id="team">
+      <span class="section-heading">Our Team</span>
       <span class="farista-section">
         <span class="farista-details">
           <img src="img/babu.png" class="farista" />
@@ -148,16 +147,38 @@
       </span>
       <span class="separator" />
     </div>
-    <div id="contactus"></div>
+    <div class="contactus-section" id="contactus">
+      <div class="contactus-label">
+        Contact Us
+      </div>
+      <div class="contactus-details-section">
+        <div class="contactus-inputs-section">
+          <input type="text" placeholder="Name" class="contactus-input"/>
+          <input type="text" placeholder="Email" class="contactus-input"/>
+          <input type="text" placeholder="Subject" class="contactus-input"/>
+        </div>
+        <div class="contactus-message-section">
+          <textarea placeholder="Message" class="contactus-message"></textarea>
+        </div>
+      </div>
+      <div class="contactus-btn-section">
+        <input type="button" value="Send Message" class="contactus-btn"/>
+      </div>
+    </div>
     <div class="footer-section" id="contactus">
       C 2016 Humble
    </div>
+   <!-- Do not change the code! -->
+   <script type="text/javascript">
+   (function(d,s,id){var z=d.createElement(s);z.type="text/javascript";z.id=id;z.async=true;z.src="//static.zotabox.com/b/7/b7319d7df8d764b706a4f85a97dff839/widgets.js";var sz=d.getElementsByTagName(s)[0];sz.parentNode.insertBefore(z,sz)}(document,"script","zb-embed-code"));
+   </script>
+   <!-- Do not change the code! -->
   </body>
 </html>
 <script>
 $('a').click(function(){
     $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - 20
+        scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
     return false;
 });

@@ -178,6 +178,61 @@
   color: rgb(80, 81, 82);
   background-color: rgb(241, 242, 244);
 }
+.contactus-section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(241, 242, 244);
+  color: rgb(80, 81, 82);
+  align-items: center;
+}
+.contactus-label {
+  margin: 50px 0 40px;
+  font-size: 28px;
+  font-weight: lighter;
+}
+.contactus-btn-section {
+  margin: 40px 0 50px;
+}
+.contactus-btn {
+  background: rgb(93,94,95);
+  color: rgb(239,240,241);
+  border: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.contactus-details-section {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+.contactus-inputs-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.contactus-message-section {
+  width: 50%;
+}
+.contactus-input {
+  width: 80%;
+  height: 35px;
+  margin-bottom: 15px;
+  border: none;
+  font-size: 15px;
+  padding: 0 10px;
+}
+.contactus-input:focus, .contactus-message:focus, .contactus-btn:focus {
+  outline: none;
+}
+.contactus-message {
+  border: none;
+  height: 115px;
+  width: 80%;
+  resize: none;
+  padding: 10px;
+}
 
 .team-area {
   flex-shrink: 1;
