@@ -192,6 +192,8 @@
 }
 .contactus-btn-section {
   margin: 40px 0 50px;
+  display: flex;
+  justify-content: center;
 }
 .contactus-btn {
   background: rgb(93,94,95);
@@ -205,6 +207,8 @@
 .contactus-details-section {
   display: flex;
   justify-content: space-between;
+}
+.contactus-form {
   width: 65%;
 }
 .contactus-inputs-section {
@@ -233,6 +237,14 @@
   resize: none;
   padding: 10px;
 }
+.thankyou-section {
+  display: none;
+  margin: 120px 0 135px;
+  font-size: 20px;
+  color: rgb(77, 138, 200);
+  font-weight: lighter;
+}
+
 
 .team-area {
   flex-shrink: 1;

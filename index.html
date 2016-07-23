@@ -151,28 +151,29 @@
       <div class="contactus-label">
         Contact Us
       </div>
-      <div class="contactus-details-section">
-        <div class="contactus-inputs-section">
-          <input type="text" placeholder="Name" class="contactus-input"/>
-          <input type="text" placeholder="Email" class="contactus-input"/>
-          <input type="text" placeholder="Subject" class="contactus-input"/>
+      <form id="contactus-form" class="contactus-form">
+        <input type="hidden" id="idstamp" name="idstamp" value="5h2w9+wFin9M5FEDg8wCOCwjuY7qlu0/fFCHy5Md6tk=" />
+        <div class="contactus-details-section">
+          <div class="contactus-inputs-section">
+            <input type="text" name="Field4" placeholder="Name" class="contactus-input"/>
+            <input type="text" name="Field6" placeholder="Email" class="contactus-input"/>
+            <input type="text" name="Field7" placeholder="Subject" class="contactus-input"/>
+          </div>
+          <div class="contactus-message-section">
+            <textarea name="Field9" placeholder="Message" class="contactus-message"></textarea>
+          </div>
         </div>
-        <div class="contactus-message-section">
-          <textarea placeholder="Message" class="contactus-message"></textarea>
+        <div class="contactus-btn-section">
+          <input onClick="submitContactForm()" type="button" value="Send Message" class="contactus-btn" />
         </div>
-      </div>
-      <div class="contactus-btn-section">
-        <input type="button" value="Send Message" class="contactus-btn"/>
+      </form>
+      <div id="thankyou-section" class="thankyou-section">
+        Thanks for contacting us. We will get back to you shortly !
       </div>
     </div>
     <div class="footer-section" id="contactus">
       C 2016 Humble
    </div>
-   <!-- Do not change the code! -->
-   <script type="text/javascript">
-   (function(d,s,id){var z=d.createElement(s);z.type="text/javascript";z.id=id;z.async=true;z.src="//static.zotabox.com/b/7/b7319d7df8d764b706a4f85a97dff839/widgets.js";var sz=d.getElementsByTagName(s)[0];sz.parentNode.insertBefore(z,sz)}(document,"script","zb-embed-code"));
-   </script>
-   <!-- Do not change the code! -->
   </body>
 </html>
 <script>
@@ -182,4 +183,15 @@ $('a').click(function(){
     }, 500);
     return false;
 });
+function submitContactForm() {
+  $.ajax({
+    url:'https://jyotipuri.wufoo.com/forms/humble-site-form/',
+    type:'post',
+    data:$('#contactus-form').serialize(),
+    success:function(){
+      $("#contactus-form").hide();
+      $("#thankyou-section").show();
+    }
+  });
+}
 </script>
