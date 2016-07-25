@@ -6,12 +6,12 @@
     <script src="lib/jquery-3.0.0.min.js"></script>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/logo.png" sizes="16*16" />
+    <link rel="icon" type="image/png" href="img/icon_logo.png" sizes="16*16" />
   </head>
   <body>
     <div class="header-section" id="Home">
       <div class="header-top">
-        <img class="logo" src="img/logo.png"/>
+        <img class="logo" src="img/logo-new.png"/>
         <ul class="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#aboutus">About Us</a></li>
@@ -163,16 +163,17 @@
             <textarea name="Field9" placeholder="Message" class="contactus-message"></textarea>
           </div>
         </div>
+        <div id="thankyou-section" class="thankyou-section">
+          Thanks for contacting us. We will get back to you shortly !
+        </div>
         <div class="contactus-btn-section">
-          <input onClick="submitContactForm()" type="button" value="Send Message" class="contactus-btn" />
+          <input id="contactus-btn" onClick="submitContactForm()" type="button" value="Send Message" class="contactus-btn" />
+          <div id="loader" class="loader"></div>
         </div>
       </form>
-      <div id="thankyou-section" class="thankyou-section">
-        Thanks for contacting us. We will get back to you shortly !
-      </div>
     </div>
     <div class="footer-section" id="contactus">
-      C 2016 Humble
+      &#169; 2016 Humble
    </div>
   </body>
 </html>
@@ -183,14 +184,17 @@ $('a').click(function(){
     }, 500);
     return false;
 });
-function submitContactForm() {
+function submitContactForm(event) {
+  $("#loader").show();
+  $('#contactus-btn').attr('disabled',true);
+  $('#contactus-btn').addClass('contactus-input-disabled');
   $.ajax({
     url:'https://jyotipuri.wufoo.com/forms/humble-site-form/',
     type:'post',
     data:$('#contactus-form').serialize(),
     success:function(){
-      $("#contactus-form").hide();
       $("#thankyou-section").show();
+      $("#loader").hide();
     }
   });
 }

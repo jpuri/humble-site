@@ -9,7 +9,6 @@
 .logo {
   height: 180px;
   width: auto;
-  background: white;
 }
 .header-top {
   display: flex;
@@ -191,7 +190,8 @@
   font-weight: lighter;
 }
 .contactus-btn-section {
-  margin: 40px 0 50px;
+  position: relative;
+  margin: 10px 0 50px;
   display: flex;
   justify-content: center;
 }
@@ -230,6 +230,10 @@
 .contactus-input:focus, .contactus-message:focus, .contactus-btn:focus {
   outline: none;
 }
+.contactus-input-disabled {
+  background-color: #9fa0a0;
+  font-style: italic;
+}
 .contactus-message {
   border: none;
   height: 115px;
@@ -238,12 +242,38 @@
   padding: 10px;
 }
 .thankyou-section {
-  display: none;
-  margin: 120px 0 135px;
-  font-size: 20px;
+  visibility: hidden;
+  margin-top: 25px;
+  font-size: 17px;
   color: rgb(77, 138, 200);
   font-weight: lighter;
+  text-align: center;
 }
+.loader {
+  display: none;
+  position: absolute;;
+  top: 0;
+  left: 46%;
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #4d8ac8;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
 
 
 .team-area {
