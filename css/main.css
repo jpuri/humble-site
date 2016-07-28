@@ -206,10 +206,14 @@
 }
 .contactus-details-section {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 .contactus-form {
   width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contactus-inputs-section {
   display: flex;
@@ -231,7 +235,7 @@
   outline: none;
 }
 .contactus-input-disabled {
-  background-color: #9fa0a0;
+  background-color: #d6d6d6;
   font-style: italic;
 }
 .contactus-message {
@@ -253,7 +257,7 @@
   display: none;
   position: absolute;;
   top: 0;
-  left: 46%;
+  left: 36%;
   border: 4px solid #f3f3f3;
   border-radius: 50%;
   border-top: 4px solid #4d8ac8;
@@ -270,13 +274,36 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-
-
-
-
-
-.team-area {
+.farista {
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0px 1px 2px rgb(162, 162, 162);
+}
+.team-section-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -200px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.team-section-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.team-section-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -100px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+.team-member {
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
@@ -284,13 +311,14 @@
   width: 30%;
   margin-bottom: 40px;
 }
-.photo {
+.team-member-photo {
   height: 150px;
   border-radius: 50%;
   width: 150px;
   border: 3px solid white;
   box-shadow: 0px 1px 2px rgb(162, 162, 162);
 }
+
 
 
 
@@ -331,11 +359,6 @@
   margin-bottom: 20px;
   text-align: center;
   font-size: 15px;
-}
-.farista {
-  height: 325px;
-  border-radius: 50%;
-  width: auto;
 }
 .team-name {
   margin-top: 20px;
