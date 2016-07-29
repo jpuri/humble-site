@@ -174,7 +174,7 @@
 .team-section {
   display: flex;
   flex-direction: column;
-  color: rgb(80, 81, 82);
+  color: #909495;
   background-color: rgb(241, 242, 244);
 }
 .contactus-section {
@@ -285,23 +285,21 @@
 .team-section-1 {
   display: flex;
   justify-content: space-between;
-  margin-top: -200px;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-top: -125px;
 }
 .team-section-2 {
   display: flex;
   justify-content: space-between;
-  margin-top: -50px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .team-section-3 {
   display: flex;
   justify-content: space-between;
-  margin-top: -100px;
-  margin-left: 35%;
-  margin-right: 35%;
+  margin-top: -175px;
+  margin-bottom: 25px;
+  margin-left: 37%;
+  margin-right: 37%;
 }
 .team-member {
   flex-shrink: 1;
@@ -312,21 +310,21 @@
   margin-bottom: 40px;
 }
 .team-member-photo {
-  height: 150px;
+  height: 140px;
   border-radius: 50%;
-  width: 150px;
+  width: 140px;
   border: 3px solid white;
   box-shadow: 0px 1px 2px rgb(162, 162, 162);
 }
 .team-member-desc {
   font-size: 15px;
-  width: 175px;
+  width: 250px;
   margin-top: 15px;
   text-align: center;
   line-height: 1.3;
 }
-.team-name {
-  margin-top: 20px;
+.team-member-name {
+  margin-top: 10px;
 }
 .farista-section {
   width: 100%;
