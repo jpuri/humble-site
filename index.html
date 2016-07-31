@@ -97,7 +97,7 @@
       <span class="section-heading">Our Team</span>
       <span class="farista-section">
         <span class="farista-details">
-          <img src="img/babu.jpg" class="farista" />
+          <img src="img/babu.png" class="farista" />
           <span class="farista-name">Farista</span>
           <span class="farista-about">
             Farista with his deep knowledge of management and business drives Team Humble.
@@ -133,7 +133,7 @@
           </span>
         </span>
         <span class="team-member">
-          <img src="img/bhasinji.jpg" class="team-member-photo"/>
+          <img src="img/bhasinji.png" class="team-member-photo"/>
           <span class="team-member-name">Narinder Kumar Bhasin</span>
           <span class="team-member-desc">
             Former VP Axis Bank India. <br />
@@ -141,7 +141,7 @@
           </span>
         </span>
         <span class="team-member">
-          <img src="img/pooja.jpg" class="team-member-photo"/>
+          <img src="img/pooja.png" class="team-member-photo"/>
           <span class="team-member-name">Pooja Upreti</span>
           <span class="team-member-desc">
             Pooja is responsible for Project Management.
@@ -155,15 +155,14 @@
         Contact Us
       </div>
       <form id="contactus-form" class="contactus-form">
-        <input type="hidden" id="idstamp" name="idstamp" value="5h2w9+wFin9M5FEDg8wCOCwjuY7qlu0/fFCHy5Md6tk=" />
         <div class="contactus-details-section">
           <div class="contactus-inputs-section">
-            <input type="text" name="Field4" id="name" placeholder="Name" class="contactus-input"/>
-            <input type="text" name="Field6" id="email" placeholder="Email" class="contactus-input"/>
-            <input type="text" name="Field7" id="subject" placeholder="Subject" class="contactus-input"/>
+            <input type="text" name="name" placeholder="Name" class="contactus-input"/>
+            <input type="text" name="email" placeholder="Email" class="contactus-input"/>
+            <input type="text" name="subject" placeholder="Subject" class="contactus-input"/>
           </div>
           <div class="contactus-message-section">
-            <textarea name="Field9" id="message" placeholder="Message" class="contactus-message"></textarea>
+            <textarea name="message" placeholder="Message" class="contactus-message"></textarea>
           </div>
         </div>
         <div id="thankyou-section" class="thankyou-section">
@@ -192,7 +191,7 @@ function submitContactForm(event) {
   $('#contactus-btn').attr('disabled',true);
   $('#contactus-btn').addClass('contactus-input-disabled');
   $.ajax({
-    url:'https://jyotipuri.wufoo.com/forms/humble-site-form/',
+    url:'https://formspree.io/jyotipuri@gmail.com',
     type:'post',
     data:$('#contactus-form').serialize(),
     success:function(){
