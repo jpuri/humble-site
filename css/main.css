@@ -41,8 +41,8 @@
   margin-bottom: 50px;
 }
 .tech {
-  height: auto;
-  width: 50%;
+  height: 50%;
+  width: 55%;
 }
 .header-bottom-text {
   margin-top: 50px;
@@ -127,9 +127,9 @@
   height: 50%;
 }
 .tech-icon {
-  width: auto;
+  width: 90%;
   height: auto;
-  margin-top: 7%;
+  margin-top: 10%;
 }
 .tech-images{
   position: absolute;
