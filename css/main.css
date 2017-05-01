@@ -2,13 +2,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 7%;
-  background-color: rgb(77, 138, 200);
   height: 755px;
 }
 .logo {
-  height: 180px;
+  height: 35px;
+  margin: 20px;
   width: auto;
+}
+.company-name {
+  color: #066D99;
+  font-size: 30px;
+}
+.logo-name {
+  display: flex;
+  align-items: center;
 }
 .header-top {
   display: flex;
@@ -24,16 +31,21 @@
   list-style-type: none;
   justify-content: space-between;
 }
+.menu li {
+  padding: 6px 10px;
+  cursor: pointer;
+}
 .menu li a {
-  padding: 6px 15px;
+  padding: 0 5px;
+  font-weight: lighter;
+  color: #066D99;
   text-decoration: none;
-  color: white;
   font-size: 16px;
   font-weight: lighter;
-  border: 1px solid transparent;
+  color: #066D99;
 }
 .menu li a:hover {
-  border: 1px solid white;
+  border-bottom: 1px solid #71F138;
 }
 .header-bottom {
   display: flex;
@@ -50,7 +62,7 @@
   flex-direction: column;
 }
 .punchline {
-  color: white;
+  color: #1b5965;
   font-size: 50px;
   font-family: sans-serif;
   font-weight: 300;
@@ -169,7 +181,6 @@
   font-weight: lighter;
   align-items: center;
   justify-content: center;
-  background-color: rgb(77, 138, 200);
 }
 .team-section {
   display: flex;
