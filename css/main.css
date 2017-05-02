@@ -3,14 +3,18 @@
   flex-direction: column;
   justify-content: space-between;
   height: 755px;
+  background-image: url("../img/world.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .logo {
   height: 35px;
-  margin: 20px;
+  margin: 20px 20px 20px 0;
   width: auto;
 }
 .company-name {
-  color: #066D99;
+  /*color: #066D99;*/
+  color: white;
   font-size: 30px;
 }
 .logo-name {
@@ -21,6 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 .menu {
   margin: 0;
@@ -31,21 +36,20 @@
   list-style-type: none;
   justify-content: space-between;
 }
-.menu li {
-  padding: 6px 10px;
-  cursor: pointer;
-}
 .menu li a {
-  padding: 0 5px;
+  padding: 6px 15px;
+  cursor: pointer;
   font-weight: lighter;
-  color: #066D99;
+  /*// color: #066D99;*/
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: lighter;
-  color: #066D99;
+  color: white;
+  border: 1px solid transparent;
 }
 .menu li a:hover {
-  border-bottom: 1px solid #71F138;
+  border: 1px solid #71F138;
+  border-radius: 5%;
 }
 .header-bottom {
   display: flex;
