@@ -1,11 +1,15 @@
-body {
-  padding: 0 30px;
+html, body {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   font-family: roboto;
+   font-weight: 300;
 }
 .header-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 755px;
+  height: 100%;
+  padding: 0 20px;
 }
 .logo {
   height: 35px;
@@ -29,19 +33,19 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  width: 45%;
   min-width: 485px;
   list-style-type: none;
   justify-content: space-between;
 }
+.menu li {
+  min-width: 100px;
+}
 .menu li a {
   padding: 6px 15px;
   cursor: pointer;
-  font-weight: lighter;
   color: #066D99;
   text-decoration: none;
   font-size: 20px;
-  font-weight: lighter;
   border: 1px solid transparent;
 }
 .menu li a:hover {
@@ -51,29 +55,45 @@ body {
 .header-bottom {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-top: 8%;
+}
+.header-bottom-text {
+  width: 60%;
+}
+.testimonial-section {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30%;
+}
+.testimonial-text {
+  color: #71F138;
+  font-size: 20px;
+}
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.testimonial {
+  width: 375px;
 }
 .tech {
   height: 30%;
   width: 35%;
 }
-.header-bottom-text {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
+.punchline-section {
+  display: inline-block;
 }
 .punchline {
   color: #1b5965;
   font-size: 50px;
-  font-family: sans-serif;
-  font-weight: 300;
 }
 .mantra {
   margin-top: 15px;
   color: white;
   font-size: 25px;
-  font-family: sans-serif;
-  font-weight: 300;
   color: #71F138;
   text-align: right;
 }
@@ -88,14 +108,12 @@ body {
   font-size: 18px;
   text-align: center;
   margin: 0 auto 50px;
-  font-weight: lighter;
   width: 65%;
 }
 .section-heading {
   margin: 50px 0;
   font-size: 30px;
   text-align: center;
-  font-weight: lighter;
 }
 .separator {
   border: 2px solid rgb(57,127,198);
@@ -127,7 +145,6 @@ body {
 .tech-label {
   font-size: 18px;
   color: rgb(144,145,146);
-  font-weight: lighter;
 }
 .tech-title {
   display: flex;
@@ -162,7 +179,6 @@ body {
   text-align: center;
   color: #ffffff;
   flex-wrap: wrap;
-  font-weight: lighter;
   line-height: 1.5;
   height: 50%;
   display: flex;
@@ -175,7 +191,6 @@ body {
   width: 100%;
   height: 50px;
   font-size: 16px;
-  font-weight: lighter;
   align-items: center;
   justify-content: center;
 }
@@ -195,7 +210,6 @@ body {
 .contactus-label {
   margin: 50px 0 40px;
   font-size: 28px;
-  font-weight: lighter;
 }
 .contactus-btn-section {
   position: relative;
@@ -209,7 +223,6 @@ body {
   border: none;
   padding: 10px 15px;
   font-size: 15px;
-  font-weight: lighter;
   cursor: pointer;
 }
 .contactus-details-section {
@@ -258,7 +271,6 @@ body {
   margin-top: 25px;
   font-size: 17px;
   color: rgb(77, 138, 200);
-  font-weight: lighter;
   text-align: center;
 }
 .loader {
