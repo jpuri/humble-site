@@ -1,32 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="167px" height="201px" viewBox="0 0 167 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+<svg width="119px" height="122px" viewBox="0 0 119 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
     <title>Group</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Path" stroke="#066D99" stroke-width="3" points="94.2641663 1.57421875 3 199 45.3369541 198.706376"></polygon>
-        <path d="M14.0735511,175.873266 L52.022845,175.218092" id="Path-3" stroke="#066D99" stroke-width="3"></path>
-        <path d="M24.6924637,152.958098 L57.5886613,152.352972" id="Path-2" stroke="#066D99" stroke-width="3"></path>
-        <path d="M35.7399782,128.946424 L63.3848011,128.898651" id="Path-4" stroke="#066D99" stroke-width="3"></path>
-        <path d="M46.9357009,104.957499 L68.6842433,104.375122" id="Path-5" stroke="#066D99" stroke-width="3"></path>
-        <path d="M56.8636431,82.647458 L74.5164337,82.0423319" id="Path-6" stroke="#066D99" stroke-width="3"></path>
-        <path d="M68.5200127,58.0056339 L80.4327423,57.4005078" id="Path-7" stroke="#066D99" stroke-width="3"></path>
-        <path d="M78.9586721,35.7137917 L86.443183,35.1063908" id="Path-8" stroke="#066D99" stroke-width="3"></path>
-        <polygon id="Path" stroke="#066D99" stroke-width="3" points="165.019531 1.57421875 73.7553649 199 116.092319 198.706376"></polygon>
-        <path d="M84.828916,175.873266 L122.77821,175.218092" id="Path-3" stroke="#066D99" stroke-width="3"></path>
-        <path d="M95.4478286,152.958098 L128.344026,152.352972" id="Path-2" stroke="#066D99" stroke-width="3"></path>
-        <path d="M106.495343,128.946424 L134.140166,128.898651" id="Path-4" stroke="#066D99" stroke-width="3"></path>
-        <path d="M117.691066,104.957499 L139.439608,104.375122" id="Path-5" stroke="#066D99" stroke-width="3"></path>
-        <path d="M127.619008,82.647458 L145.271799,82.0423319" id="Path-6" stroke="#066D99" stroke-width="3"></path>
-        <path d="M139.275378,58.0056339 L151.188107,57.4005078" id="Path-7" stroke="#066D99" stroke-width="3"></path>
-        <path d="M149.714037,35.7137917 L157.198548,35.1063908" id="Path-8" stroke="#066D99" stroke-width="3"></path>
-        <path d="M70.1683275,96.4607109 L121.870936,95.6030699" id="Path-9" stroke="#066D99" stroke-width="3"></path>
-        <polyline id="Path-10" stroke="#066D99" stroke-width="3" points="66.9077485 112.953808 113.781576 112.573898 113.823635 95.7327397"></polyline>
-        <path d="M81.5,96.7928478 L81.5,113.097127" id="Path-11" stroke="#066D99" stroke-width="3"></path>
-        <path d="M71.5,96.7928478 L71.5,113.097127" id="Path-11" stroke="#066D99" stroke-width="3"></path>
-        <path d="M91.5,96.7928478 L91.5,113.097127" id="Path-11" stroke="#066D99" stroke-width="3"></path>
-        <path d="M102.5,96.7928478 L102.5,113.097127" id="Path-11" stroke="#066D99" stroke-width="3"></path>
-        <g id="Group"></g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Group" stroke="#1B5965" stroke-width="2">
+            <path d="M52.5,1.5 L1.5,120.5" id="Line"></path>
+            <path d="M52.5,2.5 L21.5,120.5" id="Line"></path>
+            <path d="M2.5,121 L20.5,121" id="Line"></path>
+            <path d="M5.5,114 L22.5,114" id="Line"></path>
+            <path d="M8.5,107 L24.5,107" id="Line"></path>
+            <path d="M11.5,100 L26.5,100" id="Line"></path>
+            <path d="M14.5,93 L28.5,93" id="Line"></path>
+            <path d="M17.5,86 L30.5,86" id="Line"></path>
+            <path d="M20.5,79 L31.5,79" id="Line"></path>
+            <path d="M23.5,72 L33.5,72" id="Line"></path>
+            <path d="M26.5,65 L35.5,65" id="Line"></path>
+            <path d="M29.5,58 L37.5,58" id="Line"></path>
+            <path d="M35.5,44 L40.5,44" id="Line"></path>
+            <path d="M32.5,51 L39.5,51" id="Line"></path>
+            <path d="M37.5,37 L42.5,37" id="Line"></path>
+            <path d="M40.5,30 L44.5,30" id="Line"></path>
+            <path d="M44.5,22 L46.5,22" id="Line"></path>
+            <path d="M47.5,15 L48.5,15" id="Line"></path>
+            <path d="M117.5,1.5 L66.5,120.5" id="Line"></path>
+            <path d="M117.5,2.5 L86.5,120.5" id="Line"></path>
+            <path d="M67.5,121 L85.5,121" id="Line"></path>
+            <path d="M70.5,114 L87.5,114" id="Line"></path>
+            <path d="M73.5,107 L89.5,107" id="Line"></path>
+            <path d="M76.5,100 L91.5,100" id="Line"></path>
+            <path d="M79.5,93 L93.5,93" id="Line"></path>
+            <path d="M82.5,86 L95.5,86" id="Line"></path>
+            <path d="M85.5,79 L96.5,79" id="Line"></path>
+            <path d="M88.5,72 L98.5,72" id="Line"></path>
+            <path d="M91.5,65 L100.5,65" id="Line"></path>
+            <path d="M94.5,58 L102.5,58" id="Line"></path>
+            <path d="M100.5,44 L105.5,44" id="Line"></path>
+            <path d="M97.5,51 L104.5,51" id="Line"></path>
+            <path d="M102.5,37 L107.5,37" id="Line"></path>
+            <path d="M105.5,30 L109.5,30" id="Line"></path>
+            <path d="M109.5,22 L111.5,22" id="Line"></path>
+            <path d="M112.5,15 L113.5,15" id="Line"></path>
+            <path d="M95,50.9999992 L41,50.9999992" id="Line"></path>
+            <path d="M45,51 L42,65" id="Line"></path>
+            <path d="M89,64.9999992 L35,64.9999992" id="Line"></path>
+            <path d="M53,51 L50,65" id="Line"></path>
+            <path d="M60,51 L57,65" id="Line"></path>
+            <path d="M67,51 L64,65" id="Line"></path>
+            <path d="M74,51 L71,65" id="Line"></path>
+            <path d="M81,51 L78,65" id="Line"></path>
+            <path d="M88,51 L85,65" id="Line"></path>
+        </g>
     </g>
 </svg>

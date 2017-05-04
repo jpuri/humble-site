@@ -9,7 +9,6 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 0 20px;
 }
 .logo {
   height: 35px;
@@ -25,6 +24,10 @@ html, body {
   align-items: center;
 }
 .header-top {
+  padding: 0 20px;
+  position: fixed;
+  width: 98%;
+  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +36,6 @@ html, body {
   margin: 0;
   padding: 0;
   display: flex;
-  min-width: 485px;
   list-style-type: none;
   justify-content: space-between;
 }
@@ -53,9 +55,10 @@ html, body {
   border-radius: 5%;
 }
 .header-bottom {
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  margin-top: 8%;
+  margin-top: 12%;
 }
 .header-bottom-text {
   width: 60%;

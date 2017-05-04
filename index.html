@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="header-section" id="Home">
-      <div class="header-top">
+      <div class="header-top" id="header-top">
         <span class="logo-name">
           <img class="logo" src="img/logo.svg"/>
           <span class="company-name">Humble</span>
@@ -230,5 +230,13 @@ function submitContactForm(event) {
       $('#message').val('');
     }
   });
+}
+window.onscroll = function() { scrollFunc() };
+function scrollFunc() {
+  if (document.body.scrollTop > 50) {
+    document.getElementById("header-top").style['box-shadow'] = '0 0 7px 0 #d2d2d2';
+  } else {
+    document.getElementById("header-top").style['box-shadow'] = 'none';
+  }
 }
 </script>
