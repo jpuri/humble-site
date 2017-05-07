@@ -64,7 +64,7 @@ html, body {
   width: 60%;
 }
 .testimonial-section {
-  margin-top: 25%;
+  margin-top: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,6 +81,7 @@ html, body {
 }
 .testimonial {
   width: 375px;
+  font-size: 18px;
 }
 .tech {
   height: 30%;
@@ -101,6 +102,7 @@ html, body {
   text-align: right;
 }
 .welcome-section {
+  height: 80%;
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
@@ -110,13 +112,14 @@ html, body {
 .section-text {
   font-size: 18px;
   text-align: center;
-  margin: 0 auto 50px;
+  margin: 0 auto 75px;
   width: 65%;
 }
 .section-heading {
-  margin: 50px 0;
+  margin: 75px 0;
   font-size: 30px;
   text-align: center;
+  color: #066D99;
 }
 .separator {
   border: 2px solid rgb(57,127,198);
@@ -373,4 +376,31 @@ html, body {
   margin-bottom: 20px;
   text-align: center;
   font-size: 15px;
+}
+.line-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.green-line {
+  background: #71F138;
+  border: 1px solid #71F138;
+  width: 50%;
+}
+.team-wrapper {
+  display: flex;
+  margin-bottom: 75px;
+  justify-content: space-around;
+}
+.team-img {
+  height: auto;
+  width: 30%;
+}
+.aboutus-section-text {
+  width: 40%;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
