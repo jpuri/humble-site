@@ -109,6 +109,14 @@ html, body {
   flex-direction: column;
   color: rgb(104, 105, 106);
 }
+.services-section {
+  height: 85%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(104, 105, 106);
+}
 .section-text {
   font-size: 18px;
   text-align: center;
@@ -403,4 +411,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.services-img {
+  height: 400px;
+  width: auto;
 }
