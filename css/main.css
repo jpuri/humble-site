@@ -4,6 +4,7 @@ html, body {
    margin: 0;
    font-family: roboto;
    font-weight: 300;
+   color: rgb(104, 105, 106);
 }
 .header-section {
   display: flex;
@@ -15,11 +16,11 @@ html, body {
   margin: 20px 20px 20px 0;
   width: auto;
 }
-.company-name {
+.name {
   color: #066D99;
   font-size: 30px;
 }
-.logo-name {
+.logo-wrapper {
   display: flex;
   align-items: center;
 }
@@ -58,7 +59,7 @@ html, body {
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  margin-top: 12%;
+  margin-top: 15%;
 }
 .header-bottom-text {
   width: 60%;
@@ -83,15 +84,20 @@ html, body {
   width: 375px;
   font-size: 18px;
 }
-.tech {
-  height: 30%;
-  width: 35%;
+.team-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-img {
+  height: auto;
+  width: 80%;
 }
 .punchline-section {
   display: inline-block;
 }
 .punchline {
-  color: #1b5965;
+  color: #066D99;
   font-size: 50px;
 }
 .mantra {
@@ -101,26 +107,15 @@ html, body {
   color: #71F138;
   text-align: right;
 }
-.welcome-section {
-  height: 80%;
+.section {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
   flex-direction: column;
-  color: rgb(104, 105, 106);
-}
-.services-section {
-  height: 85%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  color: rgb(104, 105, 106);
 }
 .section-text {
   font-size: 18px;
   text-align: center;
-  margin: 0 auto 75px;
   width: 65%;
 }
 .section-heading {
@@ -128,76 +123,6 @@ html, body {
   font-size: 30px;
   text-align: center;
   color: #066D99;
-}
-.separator {
-  border: 2px solid rgb(57,127,198);
-  height: 0;
-  width: 10%;
-  margin: 0 auto;
-}
-.service-section {
-  margin: 20px 7%;
-  display: flex;
-  flex-direction: column;
-  color: rgb(104, 105, 106);
-}
-.tech-section {
-  display: flex;
-  justify-content: space-around;
-  height: 460px;
-  margin: 0 4% 60px;
-}
-.tech-detail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  margin: 7% 0;
-}
-.tech-label {
-  font-size: 18px;
-  color: rgb(144,145,146);
-}
-.tech-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 50%;
-}
-.tech-icon {
-  width: 90%;
-  height: auto;
-  margin-top: 10%;
-}
-.tech-images{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-.tech-area {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  align-items: center;
-  position: relative;
-  max-width: 270px;
-  min-width: 200px;
-}
-.tech-description {
-  font-size: 15px;
-  width: 90%;
-  text-align: center;
-  color: #ffffff;
-  flex-wrap: wrap;
-  line-height: 1.5;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  margin-top: 20%;
 }
 .footer-section {
   color: white;
@@ -208,16 +133,62 @@ html, body {
   align-items: center;
   justify-content: center;
 }
+.line-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.green-line {
+  background: #71F138;
+  border: 1px solid #71F138;
+  width: 50%;
+}
+.section-body {
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: space-around;
+}
+.section-content {
+  width: 50%;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-text {
+  width: 40%;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-areas {
+  text-align: left;
+  list-style: url('../img/limark.svg');
+}
+.service-areas li p {
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
 .team-section {
   display: flex;
   flex-direction: column;
   color: #909495;
-  background-color: rgb(241, 242, 244);
 }
 .contactus-section {
   display: flex;
   flex-direction: column;
-  background-color: rgb(241, 242, 244);
   color: rgb(80, 81, 82);
   align-items: center;
 }
@@ -265,6 +236,7 @@ html, body {
   border: none;
   font-size: 15px;
   padding: 0 10px;
+  border: 1px solid rgb(241, 242, 244);
 }
 .contactus-input:focus, .contactus-message:focus, .contactus-btn:focus {
   outline: none;
@@ -279,6 +251,7 @@ html, body {
   width: 80%;
   resize: none;
   padding: 10px;
+  border: 1px solid rgb(241, 242, 244);
 }
 .thankyou-section {
   visibility: hidden;
@@ -384,35 +357,4 @@ html, body {
   margin-bottom: 20px;
   text-align: center;
   font-size: 15px;
-}
-.line-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.green-line {
-  background: #71F138;
-  border: 1px solid #71F138;
-  width: 50%;
-}
-.team-wrapper {
-  display: flex;
-  margin-bottom: 75px;
-  justify-content: space-around;
-}
-.team-img {
-  height: auto;
-  width: 30%;
-}
-.aboutus-section-text {
-  width: 40%;
-  font-size: 18px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.services-img {
-  height: 400px;
-  width: auto;
 }
