@@ -126,7 +126,7 @@ html, body {
   color: #066D99;
 }
 .footer-section {
-  color: white;
+  color: #066D99;
   display: flex;
   width: 100%;
   height: 50px;
@@ -173,24 +173,10 @@ html, body {
 .service-areas li p {
   margin-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-.team-section {
-  display: flex;
-  flex-direction: column;
-  color: #909495;
-}
 .contactus-section {
   display: flex;
   flex-direction: column;
-  color: rgb(80, 81, 82);
+  color: #066D99;
   align-items: center;
 }
 .contactus-label {
@@ -204,7 +190,7 @@ html, body {
   justify-content: center;
 }
 .contactus-btn {
-  background: rgb(93,94,95);
+  background: #066D99;
   color: rgb(239,240,241);
   border: none;
   padding: 10px 15px;
@@ -244,11 +230,10 @@ html, body {
 }
 .contactus-input-disabled {
   background-color: #d6d6d6;
-  font-style: italic;
 }
 .contactus-message {
   border: none;
-  height: 115px;
+  height: 120px;
   width: 80%;
   resize: none;
   padding: 10px;
@@ -256,9 +241,9 @@ html, body {
 }
 .thankyou-section {
   visibility: hidden;
-  margin-top: 25px;
+  margin: 10px 0;
+  color: #71F138;
   font-size: 17px;
-  color: rgb(77, 138, 200);
   text-align: center;
 }
 .loader {
@@ -281,6 +266,21 @@ html, body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  color: #909495;
 }
 .farista {
   height: 200px;

@@ -185,7 +185,7 @@
       </form>
     </div>
     <div class="footer-section" id="contactus">
-      &#169; 2016 Humble
+      &#169; 2017 Humble
    </div>
   </body>
 </html>
@@ -206,7 +206,7 @@ function submitContactForm(event) {
     data:$('#contactus-form').serialize(),
     dataType: "json",
     success:function(){
-      $("#thankyou-section").show();
+      $('#thankyou-section').css('visibility', 'visible');
       $("#loader").hide();
       $('#name').val('');
       $('#email').val('');
