@@ -345,3 +345,17 @@ html, body {
 .team-member-name {
   margin: 10px 0;
 }
+.customer-logo {
+  height: 30px;
+  width: auto;
+}
+.customers-list {
+  list-style-type: none;
+  display: flex;
+}
+.customer-wrapper {
+  padding: 10px;
+  border-radius: 0%;
+  margin: 0 50px;
+  width: 170px;
+}
