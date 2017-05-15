@@ -128,11 +128,11 @@ html, body {
 .footer-section {
   color: #066D99;
   display: flex;
-  width: 100%;
   height: 50px;
   font-size: 16px;
+  padding: 0 2%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .line-wrapper {
   width: 100%;
@@ -267,20 +267,15 @@ html, body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-
-
-
-
-
-
-
-
-
+.contact-email, .contact-email:visited {
+  text-decoration: none;
+  color: #066D99;
+}
 .team-section {
   display: flex;
   flex-direction: column;
   color: #909495;
+  margin-bottom: 75px;
 }
 .farista {
   height: 200px;
@@ -289,50 +284,6 @@ html, body {
   border-radius: 50%;
   border: 3px solid white;
   box-shadow: 0px 1px 2px rgb(162, 162, 162);
-}
-.team-section-1 {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -125px;
-}
-.team-section-2 {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-.team-section-3 {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -175px;
-  margin-bottom: 25px;
-  margin-left: 37%;
-  margin-right: 37%;
-}
-.team-member {
-  flex-shrink: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-  margin-bottom: 40px;
-}
-.team-member-photo {
-  height: 140px;
-  border-radius: 50%;
-  width: 140px;
-  border: 3px solid white;
-  box-shadow: 0px 1px 2px rgb(162, 162, 162);
-}
-.team-member-desc {
-  font-size: 15px;
-  width: 250px;
-  margin-top: 15px;
-  text-align: center;
-  line-height: 1.3;
-}
-.team-member-name {
-  margin-top: 10px;
 }
 .farista-section {
   width: 100%;
@@ -347,15 +298,50 @@ html, body {
 }
 .farista-name {
   font-size: 18px;
-  margin-top: 20px;
+  margin: 10px 0;
 }
 .farista-about {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  width: 60%;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  text-align: center;
   font-size: 15px;
+  text-align: center;
+}
+.team-section-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -150px;
+}
+.team-section-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.team-section-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -100px;
+  margin-left: 27%;
+  margin-right: 27%;
+}
+.team-member {
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 10px;
+}
+.team-member-photo {
+  height: 140px;
+  border-radius: 50%;
+  width: 140px;
+  border: 3px solid white;
+  box-shadow: 0px 1px 2px rgb(162, 162, 162);
+}
+.team-member-desc {
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.3;
+}
+.team-member-name {
+  margin: 10px 0;
 }
