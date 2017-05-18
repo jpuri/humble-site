@@ -132,7 +132,7 @@ html, body {
   font-size: 16px;
   padding: 0 2%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .line-wrapper {
   width: 100%;
