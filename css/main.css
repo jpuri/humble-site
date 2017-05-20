@@ -6,6 +6,10 @@ html, body {
    font-weight: 300;
    color: rgb(104, 105, 106);
 }
+a, a:visited {
+  color: rgb(104, 105, 106);
+  text-decoration: none;
+}
 .header-section {
   display: flex;
   flex-direction: column;
@@ -79,7 +83,7 @@ html, body {
 .testimonial-wrapper {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .testimonial {
   width: 375px;
