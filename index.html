@@ -273,7 +273,7 @@ function submitContactForm(event) {
   $('#contactus-btn').attr('disabled',true);
   $('#contactus-btn').addClass('contactus-input-disabled');
   $.ajax({
-    url:'https://formspree.io/contact@humble.net.in',
+    url:'http://formspree.io/contact@humble.net.in',
     type:'post',
     data:$('#contactus-form').serialize(),
     dataType: "json",
